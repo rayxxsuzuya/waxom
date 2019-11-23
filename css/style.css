@@ -151,6 +151,22 @@ body {
   cursor: pointer;
 }
 
+.page-header .flex-header .flex-header-item .header-slides:nth-child(2) h1 {
+  color: #ADFF2F;
+}
+
+.page-header .flex-header .flex-header-item .header-slides:nth-child(3) h1 {
+  color: #00FA9A;
+}
+
+.page-header .flex-header .flex-header-item .header-slides:nth-child(4) h1 {
+  color: #20B2AA;
+}
+
+.page-header .flex-header .flex-header-item .header-slides:nth-child(5) h1 {
+  color: #4682B4;
+}
+
 .page-header .header-dots-block {
   margin: 0 auto;
   text-align: center;
