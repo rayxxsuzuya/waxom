@@ -464,3 +464,46 @@ body
 						left: -50px
 						top: 4px
 
+.page-stats
+	padding-left: 15px
+	padding-right: 15px
+	background-color: #f4f5f8
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+	.container
+		padding-top: 69px
+		padding-bottom: 88px
+		display: flex
+		justify-content: center
+		align-items: center
+		.stats-item
+			flex-basis: 17%
+			position: relative
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				width: 30px
+				height: 2px
+				background-color: #ffffff
+				left: 50%
+				bottom: -28px
+				transform: translateX(-50%)
+			img
+				display: block
+				margin: 0 auto
+				margin-bottom: 19px
+			span
+				display: block
+				margin: 0 auto
+				text-align: center
+				color: #ffffff
+				font-size: 3em
+				font-weight: 200
+				margin-bottom: 9px
+			p
+				margin: 0 auto
+				text-align: center
+				color: #c7b299
+				font-size: 0.875em
+				font-weight: 400
+				text-transform: uppercase
