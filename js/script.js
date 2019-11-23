@@ -43,7 +43,7 @@ nextBtn.onclick = function () {
 
 dotsBlock.onclick = function (e) {
 	for (let i = 0; i < dots.length + 1; i++) {
-		if (e.target.classList.contains('dots-item') && e.target == dots[i - 1]) {
+		if (e.target.classList.contains('header-dots-item') && e.target == dots[i - 1]) {
 			currentSlide(i)
 		}
 	}
