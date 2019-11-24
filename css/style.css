@@ -732,7 +732,7 @@ body {
 
 .page-posts .container {
   padding-top: 76px;
-  padding-bottom: 50px;
+  padding-bottom: 81px;
 }
 
 .page-posts .container h2 {
@@ -887,5 +887,39 @@ body {
 
 .page-posts .container .flex-buttons button:nth-child(1) {
   margin: 5px;
+}
+
+.page-firm {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: url(../img/firm-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-firm .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 140px;
+  padding-bottom: 139px;
+}
+
+.page-firm .container a {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: block;
+}
+
+.page-firm .container a img {
+  display: block;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
