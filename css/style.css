@@ -931,7 +931,7 @@ body {
 
 .page-link .container {
   padding-top: 80px;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1073,5 +1073,79 @@ body {
 
 .page-link .container .link-item:nth-child(4) .links-box .links-item:nth-child(3) {
   margin-right: 10px;
+}
+
+.page-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #111111;
+}
+
+.page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.page-footer .container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-footer .container ul li {
+  display: inline-block;
+  margin-right: 7px;
+  color: #555555;
+  font-size: 0.8125em;
+  font-weight: 500;
+}
+
+.page-footer .container ul li span {
+  color: #959595;
+}
+
+.page-footer .container a {
+  text-decoration: none;
+}
+
+.page-footer .container .list-1 li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-footer .container .list-1 li a {
+  color: #555555;
+}
+
+.page-footer .container .list-1 li hr {
+  background-color: #252525;
+  height: 10px;
+  width: 1px;
+  margin: 0;
+  border: none;
+}
+
+.page-footer .container .list-1 li:nth-child(5) a {
+  color: #c7b299;
+}
+
+.page-footer .container .list-2 hr {
+  background-color: #252525;
+  height: 10px;
+  width: 1px;
+  margin: 0;
+  border: none;
+}
+
+.page-footer .container .list-2 a {
+  color: #959595;
 }
 /*# sourceMappingURL=style.css.map */
