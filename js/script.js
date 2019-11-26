@@ -1,50 +1,66 @@
 
-let dotsItem = document.querySelectorAll('.header-dots-item'),
-	dotsBlock = document.querySelectorAll('.header-dots-block')[0],
-	slides = document.querySelectorAll('.header-slides');
-prevBtn = document.querySelector('.header-left-btn'),
-	nextBtn = document.querySelector('.header-right-btn'),
-	slideIndex = 1;
 
- showSlides(slideIndex);
 
-function showSlides(n) {
-	if (n < 1) {
-		slideIndex = slides.length;
-	} else if (n > slides.length) {
-		slideIndex = 1;
-	}
+document.querySelectorAll('.page-services .container .flex-item')[0].onmouseover = function servicesHover() {
+	let hoverImg = document.querySelector('.page-services .container .flex-item img');
 
-	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
-	}
-	for (let i = 0; i < dotsItem.length; i++) {
-		dotsItem[i].classList.remove('active');
-	}
-	slides[slideIndex - 1].style.display = 'block';
-	dotsItem[slideIndex - 1].classList.add('active');
-}
+	hoverImg.src = 'img/services-icon-1-hover.png';
 
-function plusSlides(n) {
-	showSlides(slideIndex += n)
-}
+	document.querySelector('h3').style.color = '#c7b299';
+};
 
-function currentSlide(n) {
-	showSlides(slideIndex + n);
-}
+document.querySelectorAll('.page-services .container .flex-item')[0].onmouseout = function servicesHover() {
+	let hoverImg = document.querySelector('.page-services .container .flex-item img');
 
-prevBtn.onclick = function () {
-	plusSlides(-1);
-}
+	hoverImg.src = 'img/services-icon-1.png';
 
-nextBtn.onclick = function () {
-	plusSlides(1);
-}
+	document.querySelector('h3').style.color = '#555555';
+};
 
-dotsBlock.onclick = function (e) {
-	for (let i = 0; i < dots.length + 1; i++) {
-		if (e.target.classList.contains('header-dots-item') && e.target == dots[i - 1]) {
-			currentSlide(i)
-		}
-	}
-}
+document.querySelectorAll('.page-services .container .flex-item')[1].onmouseover = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[1];
+
+	hoverImg.src = 'img/services-icon-2-hover.png';
+
+	document.querySelectorAll('h3')[1].style.color = '#c7b299';
+};
+
+document.querySelectorAll('.page-services .container .flex-item')[1].onmouseout = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[1];
+
+	hoverImg.src = 'img/services-icon-2.png';
+
+	document.querySelectorAll('h3')[1].style.color = '#555555';
+};
+
+document.querySelectorAll('.page-services .container .flex-item')[2].onmouseover = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[2];
+
+	hoverImg.src = 'img/services-icon-3-hover.png';
+
+	document.querySelectorAll('h3')[2].style.color = '#c7b299';
+};
+
+document.querySelectorAll('.page-services .container .flex-item')[2].onmouseout = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[2];
+
+	hoverImg.src = 'img/services-icon-3.png';
+
+	document.querySelectorAll('h3')[2].style.color = '#555555';
+};
+
+document.querySelectorAll('.page-services .container .flex-item')[3].onmouseover = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[3];
+
+	hoverImg.src = 'img/services-icon-4-hover.png';
+
+	document.querySelectorAll('h3')[3].style.color = '#c7b299';
+};
+
+document.querySelectorAll('.page-services .container .flex-item')[3].onmouseout = function servicesHover() {
+	let hoverImg = document.querySelectorAll('.page-services .container .flex-item img')[3];
+
+	hoverImg.src = 'img/services-icon-4.png';
+
+	document.querySelectorAll('h3')[3].style.color = '#555555';
+};

@@ -42,6 +42,7 @@ body
 						font-size: 0.875em
 						font-weight: 400
 						text-decoration: none
+						transition: 0.3s
 					button
 						background: none
 						border: none
@@ -56,8 +57,10 @@ body
 		margin-bottom: 17.5%
 		.header-left-btn
 			cursor: pointer
+			transition: 0.3s
 		.header-right-btn
 			cursor: pointer
+			transition: 0.3s
 		.flex-header-item
 			.header-slides
 				h1
@@ -99,6 +102,7 @@ body
 					line-height: 23px
 					text-transform: uppercase
 					cursor: pointer
+					transition: 0.3s
 				&:nth-child(2)
 					h1
 						color: #ADFF2F
@@ -140,7 +144,7 @@ body
 		padding-bottom: 110px
 		display: flex
 		justify-content: center
-		align-items: center
+		align-items: flex-end
 		.flex-item 
 			position: relative
 			&::after
@@ -154,6 +158,8 @@ body
 				height: 3px
 				background-color: #f1eee9
 			margin-right: 22px
+			&:hover::after
+				background-color: #c7b299
 			&:nth-child(4)
 				margin-right: 0
 			img
@@ -792,4 +798,3 @@ body
 				border: none
 			a
 				color: #959595
-			
