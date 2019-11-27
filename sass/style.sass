@@ -699,6 +699,10 @@ body
 						left: -50px
 						top: 4px
 
+@media screen and ( max-width: 1080px )
+	.page-mobile
+		background: none
+
 .page-stats
 	padding-left: 15px
 	padding-right: 15px
@@ -710,8 +714,9 @@ body
 		display: flex
 		justify-content: center
 		align-items: center
+		flex-wrap: wrap
 		.stats-item
-			flex-basis: 17%
+			width: 198.89px
 			position: relative
 			&::after
 				content: ''
@@ -743,12 +748,39 @@ body
 				font-weight: 400
 				text-transform: uppercase
 
+@media screen and ( max-width: 1042px )
+	.page-stats
+		.container
+			.stats-item
+				margin-bottom: 70px
+
+@media screen and ( max-width: 1040px )
+	.page-stats
+		.container
+			.stats-item
+				&:nth-child(5)
+					margin-bottom: 0
+
+@media screen and ( max-width: 839px )
+	.page-stats
+		.container
+			.stats-item
+				&:nth-child(4)
+					margin-bottom: 0
+
+@media screen and ( max-width: 643px )
+	.page-stats
+		.container
+			.stats-item
+				&:nth-child(4)
+					margin-bottom: 69px
+
 .page-posts
 	padding-left: 15px
 	padding-right: 15px
 	.container
 		padding-top: 76px
-		padding-bottom: 81px
+		padding-bottom: 71px
 		h2
 			color: #555555
 			font-family: 'Raleway', sans-serif
@@ -767,7 +799,7 @@ body
 			margin-top: 16px
 		.flex-posts
 			margin-top: 34px
-			margin-bottom: 25px
+			margin-bottom: 35px
 			display: flex
 			align-items: center
 			justify-content: center
