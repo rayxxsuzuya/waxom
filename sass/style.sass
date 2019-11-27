@@ -480,6 +480,7 @@ body
 			align-items: center
 			padding-left: 0
 			margin-bottom: 40px
+			flex-wrap: wrap
 			.tablinks
 				cursor: pointer
 				margin-right: 9px
@@ -490,6 +491,9 @@ body
 				font-size: 0.875em
 				font-weight: 400
 				transition: 0.1s
+				&.active
+					color: #ffffff
+					background-color: #998675
 				&:hover
 					color: #ffffff
 					background-color: #998675
@@ -582,6 +586,27 @@ body
 			border: none
 			outline: none
 			cursor: pointer
+
+@media screen and ( max-width: 986px )
+	.page-projects
+		.container
+			.grid-box
+				grid-template-columns: repeat(2, minmax(290px, 370px))
+				justify-content: center
+
+@media screen and ( max-width: 651px )
+	.page-projects
+		.container
+			.grid-box
+				grid-template-columns: minmax(290px, 370px)
+			.tab
+				.tablinks
+					margin-bottom: 20px
+
+@media screen and ( max-width: 500px )
+	.page-projects
+		.container
+			padding-bottom: 46px
 
 .page-video
 	padding-left: 15px
