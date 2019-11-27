@@ -1255,3 +1255,21 @@ body
 				border: none
 			a
 				color: #959595
+
+@media screen and ( max-width: 799px )
+	.page-footer
+		.container
+			flex-direction: column
+
+@media screen and ( max-width: 424px )
+	.page-footer
+		.container
+			ul
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-wrap: wrap
+				li
+					margin-bottom: 20px
+					&:nth-child(6, 7)
+						margin-bottom: 0
