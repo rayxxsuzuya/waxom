@@ -16,7 +16,6 @@ body
 	.container
 		display: flex
 		justify-content: space-between
-		align-items: center
 		padding-top: 36px
 		a
 			display: block
@@ -135,6 +134,125 @@ body
 				height: 15px
 				border: 2px solid #d3c1ad
 				background: none
+
+@media screen and ( max-width: 1671px) 
+	.page-header
+		.flex-header
+			justify-content: space-around
+
+@media screen and ( max-width: 1146px )
+	body
+		font-size: 15px
+	.page-header
+		.container
+			nav
+				ul
+					li
+						margin-right: 23px
+						&:nth-child(8)
+							margin-right: 35px
+
+
+@media screen and ( max-width: 1019px )		
+	.page-header
+		.container
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			> a
+				margin-bottom: 30px
+		.flex-header
+			.flex-header-item
+				.header-slides
+					h1
+						font-size: 2.8em
+					p
+						font-size: 0.8em
+						max-width: 507px
+					button
+						font-size: 0.75em
+			.header-left-btn
+				transform: scale(0.8)
+				transition: 0.3s
+				&:hover
+					transform: translateX(5px) scale(0.7)
+			.header-right-btn
+				transform: scale(0.8)
+				transition: 0.3s
+				&:hover
+					transform: translateX(-5px) scale(0.7)
+		
+@media screen and ( max-width: 756px )
+	.page-header
+		.container
+			nav 
+				ul
+					flex-wrap: wrap
+					justify-content: center
+		.flex-header
+			.header-left-btn
+				transform: scale(0.6)
+				transition: 0.3s
+				&:hover
+					transform: translateX(5px) scale(0.4) 
+			.flex-header-item
+				.header-slides
+					h1
+						font-size: 2.5em
+					p
+						max-width: 444px
+			.header-right-btn
+				transform: scale(0.6)
+				transition: 0.3s
+				&:hover
+					transform: translateX(-5px) scale(0.4) 
+
+@media screen and ( max-width: 744px )
+	.page-header
+		.container
+			nav 
+				ul
+					li
+						margin-bottom: 20px	
+						&:nth-child(1)
+							margin-left: 23px
+
+@media screen and ( max-width: 596px )
+	.page-header
+		.flex-header
+			.header-left-btn
+				display: none
+			.header-right-btn
+				display: none
+
+@media screen and ( max-width: 468px )
+	.page-header
+		.flex-header
+			.flex-header-item
+				.header-slides
+					h1
+						font-size: 2.2em
+					p
+						max-width: 351px
+
+@media screen and ( max-width: 412px )
+	.page-header
+		.flex-header
+			.flex-header-item
+				.header-slides
+					h1
+						font-size: 1.9em
+					p
+						font-size: 0.7em
+						max-width: 314px
+
+@media screen and ( max-width: 320px )
+	.page-header
+		.container
+			nav
+				ul
+					li
+						margin-right: 20px
 
 .page-services
 	padding-left: 15px
